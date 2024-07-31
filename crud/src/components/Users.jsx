@@ -14,7 +14,7 @@ const Users = () => {
   },[])
 
 
-  const handleDelete = (id) => {
+  const handleDelete = (id) =>  {
     axios.delete(`http://localhost:3001/deleteUser/${id}`)
       .then((res) => {
         console.log(res);
